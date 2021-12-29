@@ -1,0 +1,125 @@
+.contatoCtn {
+  background-color: #171717;
+  width: 100%;
+  margin-top: 100px;
+}
+.contatosCtn {
+  display: flex;
+  margin: 60px 0 0 100px;
+  padding-bottom: 60px;
+}
+.tituloContato {
+  font-size: 40px;
+  line-height: 50px;
+  color: #bababa;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-top: 50px;
+  margin: 0 0 0 100px;
+}
+.email,
+.fone {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-weight: lighter;
+  font-family: 'Nunito', sans-serif;
+}
+.email {
+  margin-top: 30px;
+}
+.email span,
+.fone span {
+  content: '';
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  background: #bababa;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.redes {
+  width: 160px;
+  height: 100px;
+  margin-left: 150px;
+}
+.redes svg {
+  margin: 30px 10px 0 0;
+}
+.redes a svg path {
+  transition: 0.4s;
+}
+.redes a:hover svg path {
+  fill: #00b5b5;
+  transition: 0.4s;
+}
+#iconewts {
+  fill: #171717;
+}
+@media (max-width: 1000px) {
+  .contatosCtn {
+    display: block;
+    margin: 60px 0 0 60px;
+  }
+  .tituloContato {
+    font-size: 36px;
+    line-height: 36px;
+
+    padding-top: 50px;
+    margin: 0 0 0 60px;
+  }
+  .redes {
+    width: 160px;
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 860px) {
+  .contatosCtn {
+    display: block;
+    margin: 60px 0 0 60px;
+  }
+  .tituloContato {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 50px;
+    margin: 0 0 0 60px;
+  }
+  .redes {
+    width: 160px;
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 670px) {
+  .contatosCtn {
+    display: block;
+    margin: 60px 0 0 30px;
+  }
+  .tituloContato {
+    font-size: 26px;
+    line-height: 28px;
+    padding-top: 30px;
+    margin: 0 0 0 30px;
+  }
+  .email,
+  .fone {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    color: #ffffff;
+    font-weight: lighter;
+    font-family: 'Nunito', sans-serif;
+  }
+  .email {
+    margin-top: 30px;
+  }
+}

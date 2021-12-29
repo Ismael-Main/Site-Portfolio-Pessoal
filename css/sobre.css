@@ -1,0 +1,121 @@
+.sobreCtn {
+  width: 100%;
+  background-color: #171717;
+}
+.sobre {
+  display: flex;
+}
+.imagemDesigner {
+  margin: 50px 0 50px 100px;
+}
+.sobreMim {
+  margin: 50px 0 0 70px;
+}
+.bio {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  max-width: 380px;
+  color: #bdbdbd;
+  margin-top: 40px;
+}
+.botaoFaleComigo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #383838;
+  margin-top: 30px;
+  border: none;
+  background: transparent;
+  transition: 0.4s;
+}
+.botaoFaleComigo svg {
+  margin-left: 5px;
+}
+
+.botaoFaleComigo:hover,
+.botaoFaleComigo:hover svg path {
+  cursor: pointer;
+  fill: #00b5b5;
+  color: #00b5b5;
+  transition: 0.4s;
+}
+@media (max-width: 1000px) {
+  .sobreMim {
+    margin: 50px 0 0 50px;
+  }
+  .imagemDesigner {
+    margin: 50px 0 50px 60px;
+  }
+  .imagemDesigner {
+    width: 180px;
+  }
+  .bio {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 25px;
+  }
+  .botaoFaleComigo {
+    line-height: 22px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .botaoFaleComigo svg {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 1000px) {
+  .sobreMim {
+    margin: 50px 0 0 50px;
+  }
+  .imagemDesigner {
+    margin: 50px 0 50px 60px;
+  }
+  .imagemDesigner {
+    width: 180px;
+  }
+  .bio {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 25px;
+  }
+  .botaoFaleComigo {
+    line-height: 22px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .botaoFaleComigo svg {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 670px) {
+  .sobre {
+    display: block;
+  }
+  .imagemDesigner {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .bio {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+  .sobreMim {
+    margin: 50px 30px 0 30px;
+  }
+  .botaoFaleComigo {
+    line-height: 22px;
+    font-size: 16px;
+    padding: 20px 0 30px 0;
+  }
+}

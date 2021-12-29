@@ -1,0 +1,132 @@
+.conhecimentosCtn {
+  display: grid;
+  grid-template-columns: 10fr auto 10fr;
+  height: 290px;
+  background-color: #171717;
+  margin-top: 60px;
+}
+.conhecimentosTitulo {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #ffff;
+  font-weight: 600;
+  margin: 90px 0 0 100px;
+}
+.conhecimentosTitulo span {
+  color: #414141;
+}
+.conhecimentos {
+  grid-column: 1;
+}
+.separadorConhecimentos {
+  grid-column: 2;
+  content: '';
+  display: flex;
+  height: 220px;
+  width: 2px;
+  margin: 35px 0 0 0;
+  background-color: #2f2f2f;
+}
+.conhecimentosTexto {
+  grid-column: 3;
+  margin: 50px 0 0 50px;
+}
+.conhecimentosTexto p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 415px;
+  color: #bdbdbd;
+  margin-top: 40px;
+}
+
+.listas {
+  display: grid;
+  grid-template-columns: 160px 160px;
+  grid-template-rows: auto auto;
+  margin-top: 30px;
+}
+.lista li {
+  margin-bottom: 10px;
+  color: #e5e5e5;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.lista-1 {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.lista-2 {
+  grid-column: 2/2;
+  grid-row: 1;
+}
+.lista-3 {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  margin-top: 10px;
+}
+.separador {
+  content: '';
+  display: block;
+  height: 2px;
+  max-width: 360px;
+  width: 180%;
+  background-color: #2f2f2f;
+}
+.lista-1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 140px;
+  margin-left: 140px;
+  background-color: #2f2f2f;
+}
+@media (max-width: 1000px) {
+  .conhecimentosCtn {
+    margin-top: 30px;
+  }
+  .conhecimentosTitulo {
+    font-size: 36px;
+    line-height: 43px;
+    margin: 100px 0 0 60px;
+  }
+  .lista li {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 860px) {
+  .conhecimentosCtn {
+    display: grid;
+    grid-template-columns: 200px 2px auto;
+  }
+
+  .conhecimentosTitulo {
+    transform: rotate(-90deg);
+    font-size: 22px;
+    line-height: 26px;
+    margin: 120px 0 0 0;
+  }
+}
+@media (max-width: 670px) {
+  .conhecimentosCtn {
+    display: flex;
+    grid-template-columns: none;
+  }
+  .conhecimentos {
+    display: none;
+  }
+  .separadorConhecimentos {
+    display: none;
+  }
+  .conhecimentosTexto {
+    grid-column: 3;
+    margin: 40px 0 0 30px;
+  }
+}

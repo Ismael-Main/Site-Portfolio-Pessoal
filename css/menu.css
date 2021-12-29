@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: right;
+}
+.menu {
+  display: flex;
+  margin-top: 50px;
+  margin-right: 100px;
+  float: right;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul a li {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 60px;
+  transition: 0.4s;
+}
+.menu ul a li:hover {
+  color: #00b5b5;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* menuMobile */
+
+@media (max-width: 1150px) {
+  .menu {
+    display: none;
+  }
+}
