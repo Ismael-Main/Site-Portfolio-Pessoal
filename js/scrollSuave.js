@@ -1,15 +1,23 @@
-const menuItens = document.querySelectorAll('.menu a[href^="#"]');
+import fecharMenuMobile from './menuMobile.js';
 
+//função principal
+
+const menuItens = document.querySelectorAll('.menu a[href^="#"]');
+const menuItensMobile = document.querySelectorAll('.menuMobile a[href^="#"]');
 function scrollToId(event) {
   event.preventDefault();
   const elemento = event.currentTarget; //pega o link do menu em que estamos clicando
   const id = elemento.getAttribute('href'); //pega o atributo 'href' desse elemento
   const sectionDestino = document.querySelector(id).offsetTop; //busca a section onde o id é igual o href do link do menu que foi clicado e checa a distancia do scroll até ele
 
-  window.scrollTo(smoothScrollTo(0, sectionDestino));
+  window.scrollTo(smoothScrollTo(0, sectionDestino, 1300));
+  fecharMenuMobile();
 }
 
 menuItens.forEach((item) => {
+  item.addEventListener('click', scrollToId);
+});
+menuItensMobile.forEach((item) => {
   item.addEventListener('click', scrollToId);
 });
 
