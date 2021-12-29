@@ -11,6 +11,5 @@ function ativarMenuMobile() {
 function fecharMenuMobile() {
   botaoMobile.classList.remove('ativo');
   menuMobile.classList.remove('ativo');
-  console.log('fechar');
 }
 export default fecharMenuMobile;
