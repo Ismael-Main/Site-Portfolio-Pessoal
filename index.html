@@ -47,11 +47,18 @@
   </header>
 
   <section id='banner'>
-    <div class="bannerCtn">
+    <div class="bannerCtn" data-anime="surgirEsquerda">
       <div class="tituloBanner">
-        <h1>DES<span>ENHE</span></h1>
-        <h1>ENVOLVIMENTO</h1>
-        <h1>WEB<span>USINESS</span></h1>
+        <h1>
+          <span id="titulos">DES</span>ENHE
+        </h1>
+        <h1>
+          <span id="titulos">ENVOLVIMENTO</span>
+        </h1>
+        <h1>
+          <span id="titulos">WEB</span>UNINESS
+        </h1>
+
       </div>
       <button class="botao"><a href="#projetos">Ver projetos</a></button>
 
@@ -59,9 +66,10 @@
   </section>
 
   <section id='sobre'>
-    <div class="sobreCtn">
+    <div class="sobreCtn" data-anime="surgirEsquerda">
       <div class="sobre">
         <img class="imagemDesigner" src="./img/designer.svg" alt="imagem de um designer">
+        </img>
         <div class='sobreMim'>
           <h1 class="titulo">Sobre mim</h1>
           <div class="bio">
@@ -81,7 +89,7 @@
   </section>
 
   <section id='formacao'>
-    <div class="formacaoCtn">
+    <div class="formacaoCtn" data-anime="surgirEsquerda">
       <div class="formacao">
         <h1 class="formacaoTitulo">Minha Formação <br><span>profissional</span></h1>
       </div>
@@ -95,7 +103,7 @@
   </section>
 
   <section id='conhecimentos'>
-    <div class="conhecimentosCtn">
+    <div class="conhecimentosCtn" data-anime="surgirEsquerda" data-time=200>
       <div class="conhecimentos">
         <h1 class="conhecimentosTitulo">CONHECIMENTOS
           <br><span>ESPECIALIZAÇÕES</span>
@@ -132,7 +140,7 @@
   <section id='projetos'>
     <div class="projetosCtn">
 
-      <div class="projetos">
+      <div class="projetos" data-anime="surgirEsquerda" data-time=2600>
         <div class="projetoBoxCtn">
           <div class="projetoBox"><a href="https://ismael-main.github.io/Borges-Web-Site-Moderno/" target="_blank"><img src="./img/projeto3.png" alt="imagem projeto"></a></div>
           <div class="projetoBox"><a href="https://ismael-main.github.io/Projeto-EasyNotas-v2/" target="_blank"><img src="./img/projeto2.png" alt="imagem projeto"></a></div>
@@ -241,6 +249,7 @@
   <footer class="footer">
     <p>borges web - 2021 | Todos os direitos reservados</p>
   </footer>
+  <script type="module" src="./js/animacoes.js"></script>
   <script type="module" src="./js/menuMobile.js"></script>
   <script type="module" src="./js/scrollSuave.js"></script>
 </body>

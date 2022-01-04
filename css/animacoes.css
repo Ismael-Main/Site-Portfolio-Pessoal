@@ -1,0 +1,26 @@
+[data-anime='surgirEsquerda'] {
+  animation: surgirEsquerda 0.6s;
+}
+
+[data-anime='surgirDireita'] {
+  animation: surgirDireita 0.6s;
+}
+
+@keyframes surgir {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes surgirEsquerda {
+  0% {
+    margin-left: -20px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
