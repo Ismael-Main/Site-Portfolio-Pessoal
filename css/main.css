@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;1,300&family=Roboto:wght@100;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import './animacoes.css';
 @import './banner.css';
 @import './menu.css';
@@ -20,6 +21,7 @@ ul {
 body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: #101010;
+  box-sizing: border-box;
 }
 
 a {
@@ -32,7 +34,7 @@ a {
   line-height: 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #ffff;
 }
 .titulo::after {
